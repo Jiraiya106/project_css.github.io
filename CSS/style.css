@@ -318,12 +318,12 @@ body {
   text-align: center;
 }
 
-.portfolio {
-  width: 100%;
-  justify-items: center;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
-}
+/* .portfolio { */
+  /* width: 100%; */
+  /* justify-items: center; */
+  /* display: grid; */
+  /* grid-template-columns: repeat(auto-fill, minmax(480px, 1fr)); */
+/* } */
 
 .portfolio_anim {
   display: flex;
