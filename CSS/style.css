@@ -392,7 +392,8 @@ body {
   width:auto;
 } */
 
-.portfolio .swiper-wrapper .swiper-button-prev::after, .swiper-button-next::after {
+.portfolio .swiper-button-prev::after,
+.portfolio .swiper-button-next::after {
   position: relative;
   color:#f7654a;
   font-size: 80px;
