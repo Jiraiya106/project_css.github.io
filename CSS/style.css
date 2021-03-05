@@ -15,6 +15,16 @@ body {
   background: #ffffff;
 }
 
+.progress {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 4px;
+  background-color: #f7654a;
+
+}
+
 .top {
   width: 100%;
   background: url(../image/Rectangle.png);

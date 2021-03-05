@@ -81,7 +81,7 @@ new Swiper('.portfolio', {
 //     myImageSlider.autoplay.stop();
 // });
 
-document.querySelector('.box').addEventListener('click', function(e) {
-    e.preventDefault();
-    this.classList.toggle('open');
-})
+// document.querySelector('.box').addEventListener('click', function(e) {
+//     e.preventDefault();
+//     this.classList.toggle('open');
+// })

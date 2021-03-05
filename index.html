@@ -16,6 +16,7 @@
 
 <body>
   <div class="wrapper">
+    <div class="progress"></div>
     <div class="top">
       <div class="header">
         <div class="logo"><img src="image/logo.svg" alt="logo" /></div>
@@ -25,22 +26,22 @@
         <div class="burger_menu" id="burger">
           <ul class="header_list">
             <li>
-              <a href="#!" class="header_link">Главная</a>
+              <a href="#start" class="header_link">Главная</a>
             </li>
             <li>
-              <a href="#!" class="header_link">Проекты</a>
+              <a href="#project" class="header_link">Проекты</a>
             </li>
             <li>
-              <a href="#!" class="header_link">Портфолио</a>
+              <a href="#portfolio" class="header_link">Портфолио</a>
             </li>
             <li>
-              <a href="#!" class="header_link">Вопрос-Ответ</a>
+              <a href="#answers" class="header_link">Вопрос-Ответ</a>
             </li>
             <li>
-              <a href="#!" class="header_link">Отзывы</a>
+              <a href="#reviews" class="header_link">Отзывы</a>
             </li>
             <li>
-              <a href="#!" class="header_link">Контакты</a>
+              <a href="#contacts" class="header_link">Контакты</a>
             </li>
           </ul>
         </div>
@@ -76,7 +77,7 @@
         </div>
       </div>
     </div>
-    <div class="project">
+    <div class="project" id="project">
       <div class="textprojects">
         <p class="textpro">наши самые большие проекты</p>
         <div class="project_arena_group">
@@ -189,7 +190,7 @@
         </div>
       </div>
     </div>
-    <div class="portfolio swiper-container">
+    <div class="portfolio swiper-container" id="portfolio">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="image/Rectangle_3.png" alt="Rectangle_3" />
@@ -251,7 +252,7 @@
         </span>
       </div>
     </div>
-    <div class="question_group">
+    <div class="question_group" id="answers">
       <div class="answers_the_question">
         ОТВЕТЫ НА ВОПРОСЫ
       </div>
@@ -326,7 +327,7 @@
         <img src="image/image.png" alt="image" />
       </div>
     </div>
-    <div class="reviews">
+    <div class="reviews" id="reviews">
       <div class="reviews_name">
         <span>отзывы о работе с нами</span>
       </div>
@@ -393,7 +394,7 @@
         </a>
       </div>
     </div>
-    <div class="contacts">
+    <div class="contacts" id="contacts">
       <div class="contacts_text">
         <span>КОНТАКТЫ</span>
       </div>
@@ -437,6 +438,7 @@
   </div>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="script/skript.js"></script>
+  <script src="script/progress.js"></script>
 </body>
 
 </html>
