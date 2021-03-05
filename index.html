@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="CSS/style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
-  <title>Document</title>
+  <title>Project CSS</title>
+  <script defer src="script/burger.js"></script>
 </head>
 
 <body>
@@ -18,7 +19,31 @@
     <div class="top">
       <div class="header">
         <div class="logo"><img src="image/logo.svg" alt="logo" /></div>
-        <div class="box"><img src="image/3.png" alt="burger" /></div>
+        <button class="box box_line" id="box">
+          <span> </span>
+        </button>
+        <div class="burger_menu" id="burger">
+          <ul class="header_list">
+            <li>
+              <a href="#!" class="header_link">Главная</a>
+            </li>
+            <li>
+              <a href="#!" class="header_link">Проекты</a>
+            </li>
+            <li>
+              <a href="#!" class="header_link">Портфолио</a>
+            </li>
+            <li>
+              <a href="#!" class="header_link">Вопрос-Ответ</a>
+            </li>
+            <li>
+              <a href="#!" class="header_link">Отзывы</a>
+            </li>
+            <li>
+              <a href="#!" class="header_link">Контакты</a>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="titlecontainer">
         <div class="h1">
@@ -69,7 +94,7 @@
                   <p>
                     Мы сделали самую красивую арену в Европе. Это открытие стало
                     для нас прорывной точкой для разивтия на следующие
-                    десятилетия. Мы очень рады данному еву.
+                    десятилетия. Мы очень рады данному еву .
                   </p>
                 </div>
               </div>
@@ -191,10 +216,13 @@
           <img src="image/Rectangle_3.7.png" alt="Rectangle_3.7" />
         </div>
       </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-scrollbar"></div>
     </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-scrollbar"></div>
+
+
     <div class="portfolio_anim">
       <div class="portfolio_anim_img">
         <span style="--stork:1;">
@@ -381,7 +409,7 @@
           <div class="contacts_group_img">
             <img src="image/tel.png" alt="tel" />
             <span>ТЕЛЕФОН:</span>
-            <p>8 (812) 111-22-33 8 (812) 111-22-33</p>
+            <a href="tel:+8812111222333">8 (812) 111-22-33 8 (812) 111-22-33</a>
           </div>
         </div>
         <div class="contacts_group_all">
@@ -395,7 +423,7 @@
           <div class="contacts_group_img">
             <img src="image/mail.png" alt="mail" />
             <span>E-MAIL:</span>
-            <p style="color: #f7654a;">INFO@VIP.RU</p>
+            <a href="mailto:info@vip.ru" style="color: #f7654a;">INFO@VIP.RU</p>
           </div>
         </div>
       </div>
@@ -410,4 +438,5 @@
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="script/skript.js"></script>
 </body>
- </html>
+
+</html>

@@ -23,23 +23,105 @@ body {
 }
 
 .top .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   max-width: 1060px;
   margin: 0 auto;
-  padding: 0 20px;
   align-items: center;
   padding-top: 20px;
 }
 
 .top .header .box {
-  display: grid;
-  place-items: center;
+  /* display: grid; */
+  /* place-items: center; */
+  position: relative;
+  overflow: hidden;
+  box-shadow: none;
   width: 50px;
   height: 50px;
-  left: 1465px;
-  top: 30px;
+  /* top: 30px;  */
   background: #f7654a;
+  cursor: pointer;
+  z-index: 2;
+  /* border: none; */
+}
+
+.header .box span::before {
+  content: '';
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 2px;
+  left: 0;
+  top: 10px;
+  width: 35px;
+  transition: all 0.3s ease 0s;
+}
+
+.header .box span::after {
+  content: '';
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  height: 2px;
+  left: 0;
+  top: -10px;
+  width: 35px;
+  transition: all 0.3s ease 0s;
+}
+
+.header .box span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 35px;
+  height: 2px;
+  background: #fff;
+  top: 23px;
+  left: 8px;
+  z-index: 2;
+  transition: all 0.3s ease 0s;
+}
+
+.header .box.open span {
+  background: #f7654a;
+}
+
+.header .box.open span::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.header .box.open span::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.burger_menu {
+  display: none;
+}
+
+.burger_menu.open {
+  display: block;
+  position: absolute;
+  top: 85px;
+  right: 0;
+  max-width: 300px;
+  background: #f7654a;
+}
+
+.header_list li {
+    list-style: none;
+    margin: 10px;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.header_list li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .top .titlecontainer {
@@ -178,10 +260,10 @@ body {
   margin-right: 0;
 }
 
-.project .textprojects .project_arena_group .project_arena .imgstation {
+/* .project .textprojects .project_arena_group .project_arena .imgstation {
   margin-bottom: 45px; 
   
-}
+} */
 
 .project .textprojects .project_arena_group .project_arena .imgline {
   width: 55px;
@@ -204,7 +286,7 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  color: #999999;
+  color: #fff;
 }
 
 .request {
@@ -318,12 +400,39 @@ body {
   text-align: center;
 }
 
-/* .portfolio { */
+.portfolio {
+  text-align: center;
   /* width: 100%; */
   /* justify-items: center; */
   /* display: grid; */
   /* grid-template-columns: repeat(auto-fill, minmax(480px, 1fr)); */
-/* } */
+}
+
+/* .portfolio .swiper-slide {
+  width:auto;
+} */
+
+.portfolio .swiper-button-prev::after,
+.portfolio .swiper-button-next::after {
+  position: relative;
+  color:#f7654a;
+  font-size: 80px;
+}
+
+.portfolio .swiper-wrapper .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-style: 14px;
+  background-color: #f7654a;
+}
+
+.portfolio .swiper-wrapper .swiper-scrollbar {
+  cursor: pointer;
+  background-color: #f7654a;
+}
+
+
 
 .portfolio_anim {
   display: flex;
@@ -543,7 +652,8 @@ body {
   color: #999999;
 }
 
-.contacts .contacts_group .contacts_group_all .contacts_group_img p {
+.contacts .contacts_group .contacts_group_all .contacts_group_img p,
+.contacts .contacts_group .contacts_group_all .contacts_group_img a {
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -580,9 +690,9 @@ body {
     display: none;
   }
 
-  .portfolio img:nth-child(odd) {
+  /* .portfolio img:nth-child(odd) { 
     display: none;
-  }
+  }*/
   .portfolio_anim {
     display: none;
   }
@@ -621,7 +731,7 @@ body {
     display: none;
   }
 
-  .portfolio img:nth-child(odd) {
+  /* .portfolio img:nth-child(odd) {
     display: none;
   }
   
@@ -631,8 +741,8 @@ body {
   .portfolio  img{
     padding: 0;
     margin: 0;
-    width: 375px;
-  }
+    width: 375px; 
+  }*/
   .question_group {
     margin: 50px auto;
   }
@@ -647,9 +757,9 @@ body {
 }
 
 @media screen and (max-width: 414px) {
-  .portfolio {
-    justify-items: start;
-  }
+ /* .portfolio { */
+    /* justify-items: start; */
+  /* } */
 
   .reviews .reviews_group .reviews_group_all {
     margin-right: 0;
