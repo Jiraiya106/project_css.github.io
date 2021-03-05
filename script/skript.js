@@ -80,3 +80,8 @@ new Swiper('.portfolio', {
 // sliderBlock.addEventListener("mouseleave", function(e) {
 //     myImageSlider.autoplay.stop();
 // });
+
+document.querySelector('.box').addEventListener('click', function(e) {
+    e.preventDefault();
+    this.classList.toggle('open');
+})
