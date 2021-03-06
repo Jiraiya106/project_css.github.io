@@ -6,6 +6,7 @@ let burgerMenuEl = document.getElementById("burger");
 
 boxElement.addEventListener("click", () => {
   burgerMenuEl.classList.toggle("open");
+  boxElement.classList.toggle("open");
 });
 const navLinks = document.querySelectorAll(".header_link");
 for (let i = 0; i < navLinks.length; i += 1) {
